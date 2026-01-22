@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Learning</title>
+    <!-- <style>
+        .main{
+            background-color: green;
+            padding : 12px;
+        }
+        #Imp{
+            background-color: orange;
+        }
+    </style> -->
+</head>
+<body style = "background-color: #212121 ; color : #ffff;">
+    
+</body>
+<script>
+    const div = document.createElement('div')
+    console.log(div);
+    div.className = "main"
+    div.id = Math.round(Math.random() * 10 +1)
+    div.setAttribute("title" , "generated title")
+    div.style.backgroundColor = "green" 
+    div.style.padding = "12px"
+    // div.innerText = "Chai aur code"
+    const addText = document.createTextNode("Learn Code")
+    div.appendChild(addText)
+    document.body.appendChild(div)
+
+    const heading = document.createElement('h1')
+    const addText2 = document.createTextNode("Learning js");
+    heading.appendChild(addText2)
+    div.appendChild(heading)
+
+    const div1 = document.createElement('div')
+    console.log(div1);
+    div1.className = "main"
+    div1.id = "Imp"
+    div1.style.backgroundColor = "orange" 
+    div1.style.padding = "12px"
+    const addText1 = document.createTextNode("Chai aur code")
+    div1.appendChild(addText1)
+    div.appendChild(div1)
+
+   
+</script>
+</html>
